@@ -37,13 +37,13 @@
               <option value="logo.svg" {% if selected_image == 'logo.svg' %}selected{% endif %}>Wybierz mema</option>
               <option value="mem_1.jpg" {% if selected_image == 'mem_1.jpg' %}selected{% endif %}>Dziewczynka przy katastrofie</option>
               <option value="mem_2.jpg" {% if selected_image == 'mem_2.jpg' %}selected{% endif %}>Dwa przyciski</option>
-              <option value="mem_3" {% if selected_image == 'mem_3.jpg' %}selected{% endif %}>Wybierz mema</option>
-              <option value="mem_4" {% if selected_image == 'mem_4.jpg' %}selected{% endif %}>Wybierz mema</option>
-              <option value="mem_5" {% if selected_image == 'mem_5.jpg' %}selected{% endif %}>Wybierz mema</option>
-              <option value="mem_6" {% if selected_image == 'mem_6.jpg' %}selected{% endif %}>Wybierz mema</option>
-              <option value="mem_7" {% if selected_image == 'mem_7.jpg' %}selected{% endif %}>Wybierz mema</option>
-              <option value="mem_8" {% if selected_image == 'mem_8.jpg' %}selected{% endif %}>Wybierz mema</option>
-              <option value="mem_9" {% if selected_image == 'mem_9.jpg' %}selected{% endif %}>Wybierz mema</option>
+              <option value="mem_3.jpg" {% if selected_image == 'mem_3.jpg' %}selected{% endif %}>3 wilki</option>
+              <option value="mem_4.jpg" {% if selected_image == 'mem_4.jpg' %}selected{% endif %}>Chill fan</option>
+              <option value="mem_5.jpg" {% if selected_image == 'mem_5.jpg' %}selected{% endif %}>Simpson w liściach</option>
+              <option value="mem_6.jpg" {% if selected_image == 'mem_6.jpg' %}selected{% endif %}>Masz pieniądze</option>
+              <option value="mem_7.jpg" {% if selected_image == 'mem_7.jpg' %}selected{% endif %}>Wyjdź</option>
+              <option value="mem_8.jpg" {% if selected_image == 'mem_8.jpg' %}selected{% endif %}>Człowiek za ścianą</option>
+              <option value="mem_9.jpg" {% if selected_image == 'mem_9.jpg' %}selected{% endif %}>WOOOOW</option>
               <!--Zadanie #1. Dodaj więcej memów poniżej -->
 
 
@@ -62,9 +62,9 @@
             <select name="color-selector" id="color-selector">
               <option value="white" {% if selected_color == 'white' %}selected{% endif %}>Bialy</option>
               <option value="black" {% if selected_color == 'black' %}selected{% endif %}>Czarny</option>
-              <option value="blue" {% if selected_color == 'white' %}selected{% endif %}>Bialy</option>
-              <option value="green" {% if selected_color == 'white' %}selected{% endif %}>Bialy</option>
-              <option value="red" {% if selected_color == 'white' %}selected{% endif %}>Bialy</option>
+              <option value="blue" {% if selected_color == 'blue' %}selected{% endif %}>niebieski</option>
+              <option value="green" {% if selected_color == 'green' %}selected{% endif %}>zielony</option>
+              <option value="red" {% if selected_color == 'red' %}selected{% endif %}>czerwony</option>
               <!--Zadanie dodatkowe #1. Dodaj więcej kolorów poniżej -->
 
 
@@ -86,7 +86,7 @@
       
       <p class="text_top" style="color: {{color_selector}}; top: {{textTop_y}}px;">
         <!-- Zadanie #2. Umieszczanie zmiennych z tekstem -->
-         <p>{{textTop}}</p>
+         {{textTop}}
 
       </p>
 
@@ -94,7 +94,7 @@
 
       <p class="text_bottom" style="color: {{color_selector}}; top: {{textBottom_y}}px;">
         <!-- Zadanie #2. Umieszczanie zmiennych z tekstem -->
-         <p>{{textBottom}}</p>
+        {{textBottom}}
       </p>
     </div>
     {% endblock %}

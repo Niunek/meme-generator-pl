@@ -12,7 +12,11 @@ def index():
         selected_image = request.form.get('image-selector')
 
         # Zadanie #2. Odczytywanie tekstu
-        
+        textTop = request.form.get('text-top')
+        textBottom = request.form.get('text-bottom')
+        color_selector = request.form.get('color-selector')
+        textTop_y = request.form.get('textTop_y')
+        textBottom_y = request.form.get('textBottom_y')
 
         # Zadanie #3. Odczytywanie pozycji tekstu
        
@@ -25,14 +29,17 @@ def index():
                                selected_image=selected_image, 
 
                                # Zadanie #2. Wyświetlanie tekstu
-                               
-
+                               textTop = textTop,
+                               textBottom = textBottom,
+                               color_selector = color_selector,
+                               textTop_y = textTop_y,
+                               textBottom_y = textBottom_y,
                                # Zadanie #3. Wyświetlanie koloru
                                
                                
                                # Zadanie #3. Wyświetlanie pozycji tekstu
 
-                               )
+                                )
     else:
         # Wyświetlanie pierwszego obrazka, jako grafika domyślna
         return render_template('index.html', selected_image='logo.svg')
